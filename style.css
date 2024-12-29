@@ -6,6 +6,7 @@ body {
     padding: 0;
 }
 
+/* Navbar Styling */
 .navbar {
     background-color: #6b4226;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -29,6 +30,7 @@ body {
     text-decoration: none;
 }
 
+/* Hero Section Styling */
 .hero-section {
     background-image: url('chai-background.jpg');
     background-size: cover;
@@ -120,7 +122,89 @@ body {
     background-color: #6b4226;
     color: #fff;
     padding: 50px 0;
+    text-align: center;
 }
 
 .contact-section h2 {
-    font-size
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fbb03b;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-section .btn-warning {
+    background-color: #fbb03b;
+    border-color: #fbb03b;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+}
+
+.contact-section .btn-warning:hover {
+    background-color: #e6952b;
+    border-color: #e6952b;
+}
+
+.contact-form {
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    background-color: #f7f4e9;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+    background-color: #f7f4e9;
+}
+
+.contact-form button {
+    background-color: #6b4226;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #fbb03b;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #6b4226;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
