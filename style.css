@@ -1,0 +1,42 @@
+/* Custom Antique Cafe Theme */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #dedcdc; /* Light beige background */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #6f4f1d; /* Antique brown color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a vintage effect */
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    text-transform: capitalize;
+}
+
+.nav-link:hover {
+    color: #ffd700 !important; /* Golden color on hover */
+    text-decoration: underline;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* White icon for the hamburger menu */
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #6f4f1d; /* Background for mobile menu */
+    }
+}
