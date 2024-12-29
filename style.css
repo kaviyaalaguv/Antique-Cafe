@@ -1,18 +1,18 @@
-/* Custom Antique Cafe Theme */
+/* Steaming Sips Theme */
 body {
-    font-family: 'Georgia', serif;
-    background-color: #dedcdc; /* Light beige background */
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8e7;
     margin: 0;
     padding: 0;
 }
 
 .navbar {
-    background-color: #6f4f1d; /* Antique brown color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a vintage effect */
+    background-color: #6b4226;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
@@ -21,22 +21,106 @@ body {
 .nav-link {
     color: #fff !important;
     font-size: 18px;
-    font-weight: 600;
-    padding: 10px 15px;
-    text-transform: capitalize;
+    padding: 10px;
 }
 
 .nav-link:hover {
-    color: #ffd700 !important; /* Golden color on hover */
-    text-decoration: underline;
+    color: #fbb03b !important;
+    text-decoration: none;
 }
 
-.navbar-toggler-icon {
-    background-color: #fff; /* White icon for the hamburger menu */
+.hero-section {
+    background-image: url('chai-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
 }
 
-@media (max-width: 768px) {
-    .navbar-collapse {
-        background-color: #6f4f1d; /* Background for mobile menu */
-    }
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
 }
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Carousel Section Styling */
+.menu-section {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #6b4226;
+}
+
+.carousel-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.carousel-item ul li {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background-color: #6b4226;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* About Section Styling */
+.about-section {
+    background-color: #f7f4e9;
+    padding: 50px 0;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6b4226;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-section .col-lg-6 img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.about-section .col-lg-6 {
+    padding: 20px;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    background-color: #6b4226;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.contact-section h2 {
+    font-size
