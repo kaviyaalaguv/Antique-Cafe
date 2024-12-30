@@ -7,21 +7,21 @@ body {
     color: #333;
 }
 
-/* Navbar */
+/* Navbar Container */
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333; /* Dark background for navbar */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Align items vertically */
     padding: 10px 20px;
-    position: fixed;
+    position: fixed; /* Sticks the navbar at the top */
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1000; /* Ensures it stays above other elements */
 }
 
+/* Logo Styling */
 .navbar-logo a {
-    color: #fff;
+    color: #333; /* Dark text color */
     font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
@@ -31,7 +31,8 @@ body {
 .navbar-links {
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 20px; /* Space between links */
+    margin-left: 70%; /* Push links to the right */
 }
 
 .navbar-links li {
@@ -39,47 +40,43 @@ body {
 }
 
 .navbar-links a {
-    color: #fff;
+    color: #f7f5f5; /* Dark text color */
     font-size: 1.2rem;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent; /* Underline effect */
 }
 
-/* Hover Effect for Links */
 .navbar-links a:hover {
     color: #a0522d; /* Brown color on hover */
+    border-bottom: 2px solid #a0522d; /* Add underline on hover */
 }
 
 /* Responsive Navbar */
 @media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: column; /* Stack logo and links vertically */
         align-items: flex-start;
+        padding: 25px;
     }
 
     .navbar-links {
-        flex-direction: column;
+        flex-direction: column; /* Stack links vertically */
         width: 100%;
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
     .navbar-links li {
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     .navbar-links a {
-        display: block;
-        padding: 10px;
+        padding: 10px 0;
         width: 100%;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .navbar-links a:hover {
-        color: #fff;
-        background-color: #a0522d;
     }
 }
+
 
 /* Home Section */
 .home-section {
@@ -121,6 +118,7 @@ body {
     font-size: 1.2rem;
     margin: 10px 0 0;
 }
+
 
 .description-box {
     background-color: rgba(96, 44, 4, 0.5);
