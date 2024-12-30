@@ -52,28 +52,23 @@ body {
     border-bottom: 2px solid #a0522d; /* Add underline on hover */
 }
 
-/* Responsive Navbar */
 @media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stack logo and links vertically */
-        align-items: flex-start;
-        padding: 25px;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
     }
 
     .navbar-links {
-        flex-direction: column; /* Stack links vertically */
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        margin-top: 50px;
-    }
-
-    .navbar-links li {
-        width: 100%;
-        text-align: left;
     }
 
     .navbar-links a {
-        padding: 10px 0;
+        padding: 10px;
         width: 100%;
+        text-align: center;
     }
 }
 
@@ -346,7 +341,7 @@ body {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 10px;
+    padding: 10px 1px;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
@@ -365,16 +360,40 @@ body {
     outline: none;
     border: 2px solid #a0522d;
 }
+@media screen and (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-text-box,
+    .contact-form-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
+s
 
 button {
     background-color: #a0522d;
     color: #fff;
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    align-items: center;
 }
 
 button:hover {
