@@ -54,7 +54,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         padding: 15px;
     }
