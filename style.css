@@ -54,23 +54,25 @@ body {
 
 @media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: row;
+        flex-direction: row; /* Keep navbar horizontal */
+        justify-content: space-between; /* Space between links */
         align-items: center;
-        padding: 15px;
+        padding: 10px;
     }
 
     .navbar-links {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        flex-direction: row; /* Keep links horizontal */
+        justify-content: center;
+        gap: 20px;
+        margin-top: 0; /* Remove unnecessary top margin */
+        width: auto; /* Prevent links from stretching */
     }
 
     .navbar-links a {
-        padding: 10px;
-        width: 100%;
-        text-align: center;
+        padding: 5px 10px; /* Adjust padding for touch-friendly design */
     }
 }
+
 
 
 /* Home Section */
